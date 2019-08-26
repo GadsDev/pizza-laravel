@@ -15,7 +15,14 @@ class CreatePizzaIngredientsTable extends Migration
     {
         Schema::create('pizza_ingredients', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('pizza_id');
+            $table->integer('ingredient_id');
+            $table->integer('quantity');
+
             $table->timestamps();
+
+            $table->foreign('pizza_id')->references('id')->on('pizzas')->onDelete('restrict');
+            $table->foreign('ingredient_id')->references('id')->on('ingredients')->onDelete('cascade');
         });
     }
 
