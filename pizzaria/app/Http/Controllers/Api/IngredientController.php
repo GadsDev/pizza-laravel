@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Ingredient;
 
 class IngredientController extends Controller
 {
@@ -14,17 +15,7 @@ class IngredientController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return Ingredient::all();
     }
 
     /**
@@ -35,7 +26,8 @@ class IngredientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        return Ingredient::create($data);
     }
 
     /**
@@ -46,18 +38,7 @@ class IngredientController extends Controller
      */
     public function show($id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        return Ingredient::where('id', $id)->firstOrFail();
     }
 
     /**
@@ -69,7 +50,10 @@ class IngredientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        Ingredient::findOrFail($id)->update($data);
+
+        return Ingredient::findOrFail($id);
     }
 
     /**
@@ -80,6 +64,9 @@ class IngredientController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Ingredient::findOrFail($id);
+        $data->delete();
+
+        return $data;
     }
 }

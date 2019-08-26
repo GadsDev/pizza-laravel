@@ -22,5 +22,5 @@ Route::apiResource('client_address', 'Api\ClientAddressController');
 
 
 Route::apiResource('pizza', 'Api\PizzaController');
-
+Route::apiResource('ingredient', 'Api\IngredientController');
 
