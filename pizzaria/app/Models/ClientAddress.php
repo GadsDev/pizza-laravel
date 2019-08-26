@@ -7,7 +7,6 @@ use App\Models\Client;
 
 class ClientAddress extends Model
 {
-    protected $primaryKey = 'telephone';
     protected $fillable = ['street', 'neighborhood', 'number', 'client_telephone'];
 
     public function client() {

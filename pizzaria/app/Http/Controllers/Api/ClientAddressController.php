@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\ClientAddress;
 
 class ClientAddressController extends Controller
 {
@@ -14,7 +15,7 @@ class ClientAddressController extends Controller
      */
     public function index()
     {
-        //
+        return ClientAddress::all();
     }
 
     /**
@@ -25,7 +26,8 @@ class ClientAddressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        return ClientAddress::create($data);
     }
 
     /**
@@ -36,7 +38,7 @@ class ClientAddressController extends Controller
      */
     public function show($id)
     {
-        //
+        return ClientAddress::where('id', $id)->firstOrFail();
     }
 
     /**
@@ -48,7 +50,10 @@ class ClientAddressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        ClientAddress::findOrFail($id)->update($data);
+
+        return ClientAddress::findOrFail($id);
     }
 
     /**
@@ -59,6 +64,9 @@ class ClientAddressController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = ClientAddress::findOrFail($id);
+        $data->delete();
+
+        return $data;
     }
 }
