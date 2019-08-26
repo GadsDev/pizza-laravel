@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Pizza;
 
 class PizzaController extends Controller
 {
@@ -14,7 +15,7 @@ class PizzaController extends Controller
      */
     public function index()
     {
-        //
+        return Pizza::all();
     }
 
     /**
@@ -25,7 +26,8 @@ class PizzaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        return Pizza::create($data);
     }
 
     /**
@@ -36,7 +38,7 @@ class PizzaController extends Controller
      */
     public function show($id)
     {
-        //
+        return Pizza::where('id', $id)->firstOrFail();
     }
 
     /**
@@ -48,7 +50,10 @@ class PizzaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        Pizza::findOrFail($id)->update($data);
+
+        return Pizza::findOrFail($id);
     }
 
     /**
@@ -59,6 +64,9 @@ class PizzaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Pizza::findOrFail($id);
+        $data->delete();
+
+        return $data;
     }
 }

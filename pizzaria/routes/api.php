@@ -21,3 +21,6 @@ Route::apiResource('client', 'Api\ClientController');
 Route::apiResource('client_address', 'Api\ClientAddressController');
 
 
+Route::apiResource('pizza', 'Api\PizzaController');
+
+
