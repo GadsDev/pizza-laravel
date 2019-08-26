@@ -48,9 +48,13 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $telephone)
     {
-        return Client::all();
+        $data = $request->all();
+        Client::where('telephone', $telephone)->update($data);
+
+        return Client::where('telephone', $telephone)->firstOrFail();
+
     }
 
     /**
@@ -59,8 +63,11 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($telephone)
     {
-        //
+        $data = Client::where('telephone', $telephone)->firstOrFail();
+                Client::where('telephone', $telephone)->delete();
+
+        return $data;
     }
 }
