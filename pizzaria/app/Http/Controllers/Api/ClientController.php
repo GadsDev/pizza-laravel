@@ -48,7 +48,7 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return Client::all();
     }
 
     /**
