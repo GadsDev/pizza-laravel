@@ -24,3 +24,11 @@ Run
 
 REST API - End Points
 ------------
+### [ /api/client
+|                               |            |                                        |
+| -------------                 | ---------- | ---------------------------------------|
+|- Criar Client                 | `POST`     |[/client](#post-client)                 |
+|- Traz todos Clientes          | `GET`      |[/client](#get-client)                  |
+|- Traz um Cliente por telefone | `GET`      |[/client/{telefone}](#find-client)      |
+|- Atualiza Cliente por telefone| `PUT/PATCH`|[/client/{telefone}](#put-client)       |
+|- Deleta Cliente por telefon   | `DELETE`   |[/client/{telefone}](#delete-client)    |
