@@ -35,8 +35,8 @@ REST API - End Points
 
 
 ### [ /api/client_address]
-|                                    |                                                                |
-| ---------------------------------- | ---------------------------------------------------------------|
+|                                    |            |                                                   |
+| ---------------------------------- | -----------|---------------------------------------------------|
 |- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client_address)         |
 |- Traz todos Clientes               | `GET`      |[api/client_address](#get-client_address)          |
 |- Traz um Endereço por id           | `GET`      |[api/client_address/{id}](#find-client_address)    |
@@ -44,8 +44,8 @@ REST API - End Points
 |- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client_address)  |
 
 ### [ /api/client_address]
-|                                    |                                                                |
-| ---------------------------------- | ---------------------------------------------------------------|
+|                                    |            |                                                   |
+| ---------------------------------- | ---------- |---------------------------------------------------|
 |- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client_address)         |
 |- Traz todos Endereços              | `GET`      |[api/client_address](#get-client_address)          |
 |- Traz um Endereço por id           | `GET`      |[api/client_address/{id}](#find-client_address)    |
@@ -53,8 +53,8 @@ REST API - End Points
 |- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client_address)  |
 
 ### [ /api/pizza]
-|                                     |                                              |
-| ------------------------------------|----------------------------------------------|
+|                                     |            |                                 |
+| ------------------------------------|----------- |---------------------------------|
 |- Cria uma nova Pizza                | `POST`     |[api/pizza](#post-pizza)         |
 |- Traz todas Pizzas                  | `GET`      |[api/pizza](#get-pizza)          |
 |- Traz uma pizza por id              | `GET`      |[api/pizza/{id}](#find-pizza)    |
@@ -63,8 +63,8 @@ REST API - End Points
 
 
 ### [ /api/ingredient]
-|                                     |                                                        |
-| ------------------------------------|--------------------------------------------------------|
+|                                     |            |                                           |
+| ------------------------------------|------------|-------------------------------------------|
 |- Cria um novo ingredient            | `POST`     |[api/ingredient](#post-ingredient)         |
 |- Traz todos ingredientes            | `GET`      |[api/ingredient](#get-ingredient)          |
 |- Traz um ingrediente por id         | `GET`      |[api/ingredient/{id}](#find-ingredient)    |
@@ -72,8 +72,8 @@ REST API - End Points
 |- Deleta um ingrediente por id       | `DELETE`   |[api/ingredient/{id}](#delete-ingredient)  |
 
 ### [ /api/pizza_ingredient]
-|                                           |                                                                    |
-| ------------------------------------------|--------------------------------------------------------------------|
+|                                           |            |                                                       |
+| ------------------------------------------|------------|-------------------------------------------------------|
 |- Vincula um ingredient a uma pizza        | `POST`     |[api/pizza_ingredient](#post-pizza_ingredient)         |
 |- Traz os ingredientes de todas pizzas     | `GET`      |[api/pizza_ingredient](#get-pizza_ingredient)          |
 |- Traz os ingredientes de uma pizza por id | `GET`      |[api/pizza_ingredient/{id}](#find-pizza_ingredient)    |
@@ -81,8 +81,8 @@ REST API - End Points
 |- Deleta um ingrediente por id             | `DELETE`   |[api/pizza_ingredient/{id}](#delete-pizza_ingredient)  |
 
 ### [ /api/order]
-|                                              |                                              |
-| ---------------------------------------------|----------------------------------------------|
+|                                              |            |                                 |
+| ---------------------------------------------|----------- |---------------------------------|
 |- Cria um pedido de uma pizza para um cliente | `POST`     |[api/order](#post-order)         |
 |- Traz todos os pedidos                       | `GET`      |[api/order](#get-order)          |
 |- Traz o um pedido por id                     | `GET`      |[api/order/{id}](#find-order)    |
