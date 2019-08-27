@@ -35,13 +35,13 @@ REST API - End Points
 
 
 ### [ /api/client_address]
-|                                    |                                                        |
-| ---------------------------------- | -------------------------------------------------------|
-|- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client)         |
-|- Traz todos Clientes               | `GET`      |[api/client_address](#get-client)          |
-|- Traz um Endereço por id           | `GET`      |[api/client_address/{id}](#find-client)    |
-|- Atualiza Endereço por id          | `PUT/PATCH`|[api/client_address/{id}](#put-client)     |
-|- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client)  |
+|                                    |                                                                |
+| ---------------------------------- | ---------------------------------------------------------------|
+|- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client_address)         |
+|- Traz todos Clientes               | `GET`      |[api/client_address](#get-client_address)          |
+|- Traz um Endereço por id           | `GET`      |[api/client_address/{id}](#find-client_address)    |
+|- Atualiza Endereço por id          | `PUT/PATCH`|[api/client_address/{id}](#put-client_address)     |
+|- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client_address)  |
 
 ### [ /api/client_address]
 |                                    |                                                                |
@@ -84,7 +84,7 @@ REST API - End Points
 |                                              |                                              |
 | ---------------------------------------------|----------------------------------------------|
 |- Cria um pedido de uma pizza para um cliente | `POST`     |[api/order](#post-order)         |
-|- Traz todos os pedidos                       | `GET`           |[api/order](#get-order)     |
+|- Traz todos os pedidos                       | `GET`      |[api/order](#get-order)          |
 |- Traz o um pedido por id                     | `GET`      |[api/order/{id}](#find-order)    |
 |- Atualiza um pedido por id                   | `PUT/PATCH`|[api/order/{id}](#put-order)     |
 |- Deleta um pedido por id                     | `DELETE`   |[api/order/{id}](#delete-order)  |
