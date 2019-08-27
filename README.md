@@ -24,7 +24,7 @@ Run
 
 REST API - End Points
 ------------
-### [ /api/client
+### [ /api/client]
 |                               |            |                                           |
 | -------------                 | ---------- | ------------------------------------------|
 |- Criar Client                 | `POST`     |[api/client](#post-client)                 |
@@ -34,8 +34,8 @@ REST API - End Points
 |- Deleta Cliente por telefon   | `DELETE`   |[api/client/{telefone}](#delete-client)    |
 
 
-### [ /api/client_address
-|                                    |            |                                           |
+### [ /api/client_address]
+|                                    |                                                        |
 | ---------------------------------- | -------------------------------------------------------|
 |- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client)         |
 |- Traz todos Clientes               | `GET`      |[api/client_address](#get-client)          |
@@ -43,7 +43,7 @@ REST API - End Points
 |- Atualiza Endereço por id          | `PUT/PATCH`|[api/client_address/{id}](#put-client)     |
 |- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client)  |
 
-### [ /api/client_address
+### [ /api/client_address]
 |                                    |                                                                |
 | ---------------------------------- | ---------------------------------------------------------------|
 |- Vincula um Endereço a um Client   | `POST`     |[api/client_address](#post-client_address)         |
@@ -52,7 +52,7 @@ REST API - End Points
 |- Atualiza Endereço por id          | `PUT/PATCH`|[api/client_address/{id}](#put-client_address)     |
 |- Deleta Endereço por id            | `DELETE`   |[api/client_address/{id}](#delete-client_address)  |
 
-### [ /api/pizza
+### [ /api/pizza]
 |                                     |                                              |
 | ------------------------------------|----------------------------------------------|
 |- Cria uma nova Pizza                | `POST`     |[api/pizza](#post-pizza)         |
@@ -62,7 +62,7 @@ REST API - End Points
 |- Deleta uma pizza por id            | `DELETE`   |[api/pizza/{id}](#delete-pizza)  |
 
 
-### [ /api/ingredient
+### [ /api/ingredient]
 |                                     |                                                        |
 | ------------------------------------|--------------------------------------------------------|
 |- Cria um novo ingredient            | `POST`     |[api/ingredient](#post-ingredient)         |
@@ -71,7 +71,7 @@ REST API - End Points
 |- Atualiza um ingrediente por id     | `PUT/PATCH`|[api/ingredient/{id}](#put-ingredient)     |
 |- Deleta um ingrediente por id       | `DELETE`   |[api/ingredient/{id}](#delete-ingredient)  |
 
-### [ /api/pizza_ingredient
+### [ /api/pizza_ingredient]
 |                                           |                                                                    |
 | ------------------------------------------|--------------------------------------------------------------------|
 |- Vincula um ingredient a uma pizza        | `POST`     |[api/pizza_ingredient](#post-pizza_ingredient)         |
@@ -80,7 +80,7 @@ REST API - End Points
 |- Atualiza os ingredientes por id          | `PUT/PATCH`|[api/pizza_ingredient/{id}](#put-pizza_ingredient)     |
 |- Deleta um ingrediente por id             | `DELETE`   |[api/pizza_ingredient/{id}](#delete-pizza_ingredient)  |
 
-### [ /api/order
+### [ /api/order]
 |                                              |                                              |
 | ---------------------------------------------|----------------------------------------------|
 |- Cria um pedido de uma pizza para um cliente | `POST`     |[api/order](#post-order)         |
